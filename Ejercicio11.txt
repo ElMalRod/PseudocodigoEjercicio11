@@ -1,0 +1,23 @@
+Algoritmo Ejercicio11
+	Definir N, contador,impares,pares,docena,j Como Entero
+	Repetir
+		Escribir "Ingresar 10 numeros"
+		Leer N
+		contador=contador+1
+		Si N mod 2==1 Entonces
+			impares=impares+1
+		SiNo
+			pares=pares+1
+		Fin Si
+		Si N>=12 Entonces
+			docena=docena+1
+		Fin Si
+		Si N>j Entonces
+			j=N
+		Fin Si
+	Hasta Que contador==10
+	Escribir "la cantidad de numeros impares es de: " impares
+	Escribir "El promedio de numeros pares es de: " pares/10
+	Escribir "La cantidad de numeros entre (13 al 24) es de: " docena
+	Escribir "El numero mas grande es: " j
+FinAlgoritmo
